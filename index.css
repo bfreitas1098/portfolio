@@ -18,15 +18,31 @@
 
 body {
   font-family: "Inter", sans-serif;
-  margin-left: 13rem;
-  margin-right: 13rem;
   background-color: var(--bg-color);
-  padding: 5.1rem 0 13rem;
+  color: var(--body-color);
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+header {
+  padding: 4rem 13rem 23.1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 24rem;
+  height: 17rem;
+  transform: translateX(-10rem);
 }
 
 .intro-line {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 500;
   color: var(--primary-color-light);
   margin-top: 23rem;
@@ -35,22 +51,42 @@ body {
 
 .arrow {
   position: absolute;
-  width: 17rem;
+  width: 16rem;
   height: 17rem;
-  left: 50rem;
-  top: 39rem;
+  left: 48rem;
+  top: 44rem;
 }
 
 h1 {
-  font-size: 12rem;
-  color: var(--body-color);
+  font-size: 11rem;
   line-height: 100%;
   margin: 11rem 0 2.1rem;
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 600;
   color: var(--light-gray);
-  width: 90rem;
+  max-width: 80rem;
+}
+
+.section {
+  padding: 12rem 13rem;
+}
+
+.section--about {
+  background-color: var(--dark-gray);
+}
+
+h3 {
+  color: var(--primary-color-light);
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 6.7rem;
+}
+
+.bio {
+  font-size: 2.5rem;
+  line-height: 155%;
 }
