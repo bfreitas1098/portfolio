@@ -35,9 +35,9 @@ nav {
 }
 
 .logo {
-  width: 24rem;
-  height: 17rem;
-  transform: translateX(-10rem);
+  width: 20rem;
+  height: 15rem;
+  transform: translateX(-6rem);
 }
 
 .intro-line {
@@ -54,7 +54,7 @@ nav {
   width: 16rem;
   height: 17rem;
   left: 48rem;
-  top: 44rem;
+  top: 42rem;
 }
 
 h1 {
@@ -87,6 +87,46 @@ h3 {
 }
 
 .bio {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 155%;
+  margin-bottom: 9rem;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: 30rem 30rem;
+  column-gap: 12rem;
+  row-gap: 9rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.8rem;
+}
+
+.feature-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--light-gray);
+}
+
+.feature-icon {
+  font-size: 2.6rem;
+  color: var(--light-gray);
+}
+
+.feature-description {
+  color: var(--body-color);
+  font-size: 2rem;
+  line-height: 150%;
 }
