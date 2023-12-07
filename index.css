@@ -130,3 +130,48 @@ h4 {
   font-size: 2rem;
   line-height: 150%;
 }
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5.1rem;
+}
+
+.testimonial {
+  background-color: #1b1f22;
+  padding: 3.8rem 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.1rem;
+}
+
+.testimonial-img {
+  width: 17.5rem;
+  height: 17.5rem;
+  object-fit: cover;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 7.5rem;
+}
+
+blockquote {
+  color: var(--body-color);
+  font-size: 2rem;
+  line-height: 140%;
+  text-align: left;
+  font-weight: 400;
+}
+
+.testimonial-author {
+  color: var(--primary-color-light);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
