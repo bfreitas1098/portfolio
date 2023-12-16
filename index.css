@@ -9,6 +9,8 @@
   --dark-gray: #1b1f22;
 }
 
+/* Default Settings */
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +25,20 @@ body {
   overflow-x: hidden;
   width: 100vw;
 }
+
+.section {
+  padding: 12rem 13rem;
+}
+
+h3 {
+  color: var(--primary-color-light);
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 6.7rem;
+}
+
+/* Hero Section */
 
 header {
   padding: 4rem 13rem 23.1rem;
@@ -70,20 +86,10 @@ h2 {
   max-width: 80rem;
 }
 
-.section {
-  padding: 12rem 13rem;
-}
+/* About Section */
 
 .section--about {
   background-color: var(--dark-gray);
-}
-
-h3 {
-  color: var(--primary-color-light);
-  font-size: 3.2rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 6.7rem;
 }
 
 .bio {
@@ -131,6 +137,8 @@ h4 {
   line-height: 150%;
 }
 
+/* Testimonials Section */
+
 .testimonials-container {
   display: flex;
   flex-direction: column;
@@ -174,4 +182,87 @@ blockquote {
   color: var(--primary-color-light);
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+/* Projects Section */
+
+.section--projects {
+  background-color: var(--dark-gray);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12rem;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.1rem;
+  padding-right: 6rem;
+}
+
+.project-img {
+  height: 30rem;
+  width: 38rem;
+}
+
+.project-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-description {
+  text-align: left;
+  font-size: 2rem;
+  color: var(--body-color);
+  line-height: 140%;
+  margin-bottom: 2.8rem;
+}
+
+.project-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.4rem;
+  margin-bottom: 6.9rem;
+}
+
+.website-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.website-link span {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.link-icon {
+  color: var(--primary-color);
+  height: 2.2rem;
+  width: 2rem;
+}
+
+.project-stack-container {
+  display: flex;
+  align-items: center;
+}
+
+.stack-icon {
+  color: var(--light-gray);
+  width: 6rem;
+  height: 6rem;
+}
+
+.stack-icon:last-child {
+  transform: translateX(4px);
 }
