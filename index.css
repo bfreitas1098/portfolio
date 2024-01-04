@@ -213,7 +213,15 @@ blockquote {
 .project-img {
   height: 30rem;
   width: 38rem;
+  object-fit: cover;
+  object-position: center left;
+  /* border: solid 1px var(--primary-color-light); */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
+
+/* .project-img:first-child {
+  object-position: -1rem center !important;
+} */
 
 .project-text-container {
   display: flex;
