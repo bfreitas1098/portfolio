@@ -231,10 +231,10 @@ blockquote {
 
 .project-description {
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--body-color);
   line-height: 140%;
-  margin-bottom: 2.8rem;
+  margin-bottom: 1.8rem;
 }
 
 .project-links-container {
@@ -307,9 +307,10 @@ h5 {
 }
 
 .form-container p {
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 125%;
   margin-bottom: 5px;
+  padding-right: 12rem;
 }
 
 h5 {
@@ -337,21 +338,34 @@ label {
 
 input {
   height: 6rem;
+}
+
+input,
+textarea {
   width: 50rem;
 }
 
 input:not(.submit-btn) {
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+
+input:not(.submit-btn),
+textarea {
   background-color: var(--bg-color);
   border: solid 1px var(--light-gray);
   color: var(--body-color);
-  font-size: 2rem;
-  padding: 0 1rem;
   transition: all 300ms ease-in-out;
 }
 
 input:not(.submit-btn):hover,
 input:not(.submit-btn):active {
   background-color: #323538;
+}
+
+textarea {
+  padding: 1rem;
+  font-size: 1.6rem;
 }
 
 /* input:not(.submit-btn):focus {
@@ -374,7 +388,7 @@ input:not(.submit-btn):active {
 }
 
 .contact-img {
-  width: 42rem;
+  width: 46rem;
 }
 
 /* Footer */
