@@ -125,8 +125,8 @@ h2 {
 
 .features-container {
   display: grid;
-  grid-template-columns: 30rem 30rem;
-  column-gap: 12rem;
+  grid-template-columns: 36rem 36rem;
+  column-gap: 6rem;
   row-gap: 9rem;
 }
 
