@@ -18,10 +18,6 @@
   font-size: 62.5%;
 }
 
-/* *:focus {
-  stroke: #ffcece;
-} */
-
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--bg-color);
@@ -415,7 +411,7 @@ textarea {
   font-size: 1.6rem;
 }
 
-dialog:not([open]) {
+/* dialog:not([open]) {
   display: none;
 }
 
@@ -450,7 +446,7 @@ dialog span {
 dialog::backdrop {
   background-color: #000;
   opacity: 50%;
-}
+} */
 
 /* input:not(.submit-btn):focus {
   background-color: #fff5f5;

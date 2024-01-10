@@ -311,7 +311,12 @@
             </p>
             <h5>Let's chat!</h5>
           </div>
-          <form name="contact">
+          <form
+            name="contact"
+            method="post"
+            action="/portfolio/success.html"
+            netlify
+          >
             <div class="input-container">
               <label>Full Name</label>
               <input
@@ -343,12 +348,12 @@
             </div>
             <input type="submit" id="submit" name="submit" class="submit-btn" />
           </form>
-          <dialog class="form-dialog">
+          <!-- <dialog class="form-dialog">
             <ion-icon name="close-outline" class="close-icon"></ion-icon>
             <span>
               Thank you for your submission,<br />I'll get back to you soon! 😁
             </span>
-          </dialog>
+          </dialog> -->
         </div>
         <img
           src="images/contact-img.jpeg"
