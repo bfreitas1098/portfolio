@@ -10,10 +10,10 @@ const nameInput = document.querySelector(".name-input");
 const emailInput = document.querySelector(".email-input");
 const messageInput = document.querySelector(".message-input");
 
-const handleSubmit = (event) => {
-  event.preventDefault();
+const handleSubmit = (e) => {
+  e.preventDefault();
 
-  const myForm = event.target;
+  const myForm = e.target;
   const formData = new FormData(myForm);
 
   fetch("/", {
@@ -21,9 +21,7 @@ const handleSubmit = (event) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => {
-      dialog.showModal();
-    })
+    .then(() => dialog.showModal())
     .catch((error) => alert(error));
 };
 
