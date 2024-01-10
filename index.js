@@ -11,7 +11,7 @@ const emailInput = document.querySelector(".email-input");
 const messageInput = document.querySelector(".message-input");
 
 form.addEventListener("submit", (e) => {
-  // e.preventDefault();
+  e.preventDefault();
   dialog.showModal();
 });
 
