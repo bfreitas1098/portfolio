@@ -308,18 +308,41 @@
           <form netlify>
             <div class="input-container">
               <label>Full Name</label>
-              <input type="text" id="name" name="name" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="name-input"
+                required
+              />
             </div>
             <div class="input-container">
               <label>Email Address</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="email-input"
+                required
+              />
             </div>
             <div class="input-container">
               <label>Message</label>
-              <textarea id="message" name="message" rows="10"></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                class="message-input"
+              ></textarea>
             </div>
             <input type="submit" id="submit" name="submit" class="submit-btn" />
           </form>
+          <dialog class="form-dialog">
+            <ion-icon name="close-outline" class="close-icon"></ion-icon>
+            <span>
+              Thank you for your submission,<br />I'll get back to you soon! 😁
+            </span>
+          </dialog>
         </div>
         <img
           src="images/contact-img.jpeg"
