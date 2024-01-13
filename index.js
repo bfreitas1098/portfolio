@@ -21,15 +21,8 @@ const handleSubmit = (e) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => dialog.showModal())
+    .then(() => alert("Thank you for your submission"))
     .catch((error) => alert(error));
 };
-
-closeBtn.addEventListener("click", () => {
-  dialog.close();
-  nameInput.value = "";
-  emailInput.value = "";
-  messageInput.value = "";
-});
 
 form.addEventListener("submit", handleSubmit);
