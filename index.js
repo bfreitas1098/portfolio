@@ -10,14 +10,26 @@ const nameInput = document.querySelector(".name-input");
 const emailInput = document.querySelector(".email-input");
 const messageInput = document.querySelector(".message-input");
 
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   dialog.showModal();
-// });
+const handleSubmit = (e) => {
+  e.preventDefault();
 
-// closeBtn.addEventListener("click", () => {
-//   dialog.close();
-//   nameInput.value = "";
-//   emailInput.value = "";
-//   messageInput.value = "";
-// });
+  const myForm = e.target;
+  const formData = new FormData(myForm);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => dialog.showModal())
+    .catch((error) => alert(error));
+};
+
+closeBtn.addEventListener("click", () => {
+  dialog.close();
+  nameInput.value = "";
+  emailInput.value = "";
+  messageInput.value = "";
+});
+
+form.addEventListener("submit", handleSubmit);
