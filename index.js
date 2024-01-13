@@ -10,10 +10,10 @@ const nameInput = document.querySelector(".name-input");
 const emailInput = document.querySelector(".email-input");
 const messageInput = document.querySelector(".message-input");
 
-const handleSubmit = (e) => {
-  e.preventDefault();
+const handleSubmit = (event) => {
+  event.preventDefault();
 
-  const myForm = e.target;
+  const myForm = event.target;
   const formData = new FormData(myForm);
 
   fetch("/", {
