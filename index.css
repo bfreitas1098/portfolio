@@ -411,47 +411,6 @@ textarea {
   font-size: 1.6rem;
 }
 
-dialog:not([open]) {
-  display: none;
-}
-
-dialog {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.2rem;
-  background-color: var(--bg-color);
-  margin: auto;
-  border: none;
-  padding: 2.4rem 0 3.2rem;
-}
-
-dialog span {
-  color: var(--body-color);
-  font-size: 2.2rem;
-  line-height: 1.4;
-  border-top: 1px solid var(--dark-gray);
-  padding: 2.4rem 3.2rem 0;
-}
-
-.close-icon {
-  align-self: flex-end;
-  height: 3rem;
-  width: 3rem;
-  color: var(--primary-color-light);
-  cursor: pointer;
-  padding-right: 3.2rem;
-}
-
-dialog::backdrop {
-  background-color: #000;
-  opacity: 50%;
-}
-
-/* input:not(.submit-btn):focus {
-  background-color: #fff5f5;
-} */
-
 .submit-btn {
   background-color: var(--primary-color);
   color: var(--dark-gray);
