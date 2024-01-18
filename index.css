@@ -57,17 +57,17 @@ nav {
   list-style: none;
 }
 
-.nav-link a:link,
-.nav-link a:visited {
+.nav-link {
   font-size: 2.2rem;
   font-weight: 500;
   color: var(--light-gray);
   text-decoration: none;
   transition: color 300ms ease-in-out;
+  cursor: pointer;
 }
 
-.nav-link a:hover,
-.nav-link a:active {
+.nav-link:hover,
+.nav-link:active {
   color: var(--primary-color-light);
 }
 
@@ -210,6 +210,14 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+#first-container,
+#second-container {
+  gap: 5.5rem;
+}
+
+#last-container {
   gap: 7.5rem;
 }
 
@@ -466,4 +474,10 @@ footer {
   width: 6.4rem;
   height: 6.4rem;
   color: var(--light-gray);
+  transition: color 300ms ease-in-out;
+}
+
+.footer-icon:hover,
+.footer-icon:active {
+  color: var(--primary-color-light);
 }
