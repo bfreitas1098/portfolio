@@ -38,6 +38,10 @@ h3 {
   margin-bottom: 6.7rem;
 }
 
+.lazy-img {
+  filter: blur(15px);
+}
+
 /* Hero Section */
 
 header {

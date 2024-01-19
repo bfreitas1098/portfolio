@@ -36,3 +36,29 @@ testimonialsLink.addEventListener(
 );
 projectsLink.addEventListener("click", scroll.bind(this, projectsSection));
 contactLink.addEventListener("click", scroll.bind(this, contactSection));
+
+/* Lazy loading images */
+const imgTargets = document.querySelectorAll("img[data-src]");
+
+const loadImg = (entries, observer) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+
+  // Replace data-src with src
+  entry.target.src = entry.target.dataset.src;
+
+  // Remove blur on images
+  entry.target.addEventListener("load", () =>
+    entry.target.classList.remove("lazy-img")
+  );
+
+  observer.unobserve(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImg, {
+  root: null,
+  threshold: 0,
+  rootMargin: "200px", // <- we do this so 200px before we see the images we will already have commenced the loading process
+});
+
+imgTargets.forEach((img) => imgObserver.observe(img));
