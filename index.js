@@ -58,7 +58,27 @@ const loadImg = (entries, observer) => {
 const imgObserver = new IntersectionObserver(loadImg, {
   root: null,
   threshold: 0,
-  rootMargin: "200px", // <- we do this so 200px before we see the images we will already have commenced the loading process
+  rootMargin: "200px",
 });
 
 imgTargets.forEach((img) => imgObserver.observe(img));
+
+/* Responsive navigation */
+const responsiveNav = document.querySelector(".responsive-nav");
+const menuBtn = document.querySelector(".menu-btn");
+const closeBtn = document.querySelector(".close-btn");
+
+const openMenu = () => {
+  responsiveNav.classList.remove("hidden");
+  menuBtn.classList.add("hidden");
+  closeBtn.classList.remove("hidden");
+};
+
+const closeMenu = () => {
+  responsiveNav.classList.add("hidden");
+  closeBtn.classList.add("hidden");
+  menuBtn.classList.remove("hidden");
+};
+
+menuBtn.addEventListener("click", openMenu);
+closeBtn.addEventListener("click", closeMenu);

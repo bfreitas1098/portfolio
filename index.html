@@ -55,12 +55,22 @@
           alt="Barbara Freitas Web Developer logo"
           class="logo"
         />
-        <ul class="navigation">
-          <li class="nav-link nav-link--about">About Me</li>
-          <li class="nav-link nav-link--testimonials">Testimonials</li>
-          <li class="nav-link nav-link--projects">My Projects</li>
-          <li class="nav-link nav-link--contact">Contact</li>
-        </ul>
+        <div class="nav-container">
+          <ul class="navigation">
+            <li class="nav-link nav-link--about">About Me</li>
+            <li class="nav-link nav-link--testimonials">Testimonials</li>
+            <li class="nav-link nav-link--projects">My Projects</li>
+            <li class="nav-link nav-link--contact">Contact</li>
+          </ul>
+          <ul class="responsive-nav hidden">
+            <li class="nav-link nav-link--about">About Me</li>
+            <li class="nav-link nav-link--testimonials">Testimonials</li>
+            <li class="nav-link nav-link--projects">My Projects</li>
+            <li class="nav-link nav-link--contact">Contact</li>
+          </ul>
+          <ion-icon name="menu-outline" class="menu-btn"></ion-icon>
+          <ion-icon name="close-outline" class="close-btn hidden"></ion-icon>
+        </div>
       </nav>
       <div class="hero">
         <div class="intro">
@@ -308,7 +318,7 @@
               supportive friends who inspire your well-being journey.
               <br /><strong>*IN DEVELOPMENT*</strong>
             </p>
-            <div class="project-links-container">
+            <div class="project-links-container zenfem-links">
               <a href="http://zenfem.community" class="website-link"
                 ><span>Visit Website</span
                 ><ion-icon
@@ -350,35 +360,39 @@
           <form
             action="https://formsubmit.co/bfreitas1098@hotmail.com"
             method="post"
+            autocomplete="on"
           >
             <input
               type="hidden"
               name="_next"
               value="https://barbarafdev.io/success.html"
+              autocomplete="name"
             />
             <input type="hidden" name="_captcha" value="false" />
             <div class="input-container">
-              <label>Full Name</label>
+              <label for="name">Full Name</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 class="name-input"
                 required
+                autocomplete="name"
               />
             </div>
             <div class="input-container">
-              <label>Email Address</label>
+              <label for="email">Email Address</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 class="email-input"
                 required
+                autocomplete="email"
               />
             </div>
             <div class="input-container">
-              <label>Message</label>
+              <label for="message">Message</label>
               <textarea
                 id="message"
                 name="message"
