@@ -52,7 +52,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: 36rem; */
 }
 
 .hidden {
@@ -83,7 +82,7 @@ nav {
 .logo {
   width: 20rem;
   height: 15rem;
-  transform: translateX(-6rem);
+  transform: translateX(-5rem);
 }
 
 .hero {
@@ -391,7 +390,8 @@ input {
 }
 
 input,
-textarea {
+textarea,
+.input-container {
   width: 50rem;
 }
 
@@ -483,6 +483,43 @@ footer {
 
 /* Media Queries */
 
+@media only screen and (max-width: 920px) {
+  .project-img {
+    height: 28rem;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .section {
+    padding: 12rem 8rem;
+  }
+
+  .bio,
+  .feature-description {
+    font-size: 1.8rem;
+  }
+
+  .features-container {
+    grid-template-columns: 32rem 32rem;
+  }
+
+  .section--contact {
+    padding: 12rem 10rem;
+  }
+
+  .form-container p {
+    padding-right: 4rem;
+  }
+
+  form,
+  .input-container,
+  input,
+  textarea,
+  .contact-img {
+    width: 32rem;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .menu-btn,
   .close-btn {
@@ -526,6 +563,22 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1099px) {
+  form,
+  .input-container,
+  input,
+  textarea,
+  .contact-img {
+    width: 36rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  .form-container p {
+    padding-right: 0;
+  }
+}
+
 @media only screen and (min-width: 1001px) {
   .menu-btn {
     display: none;
@@ -534,7 +587,7 @@ footer {
 
 @media only screen and (max-width: 1024px) {
   .project-img {
-    width: 34rem;
+    width: 32rem;
   }
 
   .form-container {
@@ -549,7 +602,7 @@ footer {
 }
 
 @media only screen and (max-width: 1049px) {
-  .zenfem-links {
+  .project-links-container {
     margin-bottom: 3rem;
   }
 }
@@ -586,10 +639,6 @@ footer {
     font-size: 1.8rem;
   }
 
-  .project-links-container:not(.zenfem-links) {
-    margin-bottom: 5rem;
-  }
-
   blockquote,
   .form-container p {
     font-size: 1.6rem;
@@ -597,12 +646,6 @@ footer {
 
   h5 {
     font-size: 3.2rem;
-  }
-
-  input,
-  textarea,
-  .contact-img {
-    width: 36rem;
   }
 }
 
@@ -643,9 +686,5 @@ footer {
 @media only screen and (max-width: 1300px) {
   .project-description {
     font-size: 1.6rem;
-  }
-
-  .form-container p {
-    padding-right: 0;
   }
 }
