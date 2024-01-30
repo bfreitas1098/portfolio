@@ -26,8 +26,6 @@ const testimonialsSection = document.getElementById("testimonials-section");
 const projectsSection = document.getElementById("projects-section");
 const contactSection = document.getElementById("contact-section");
 
-console.log(header.getBoundingClientRect().width);
-
 if (header.getBoundingClientRect().width <= 1024) {
   aboutLink = document.querySelector(".responsive-link--about");
   testimonialsLink = document.querySelector(".responsive-link--testimonials");
@@ -99,3 +97,14 @@ const closeMenu = () => {
 
 menuBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
+
+const responsiveLinks = [
+  aboutLink,
+  testimonialsLink,
+  projectsLink,
+  contactLink,
+];
+
+for (let i = 0; i < responsiveLinks.length; i++) {
+  responsiveLinks[i].addEventListener("click", closeMenu);
+}
