@@ -16,14 +16,31 @@ fetch(`https://formsubmit.co/api/get-submissions/${apiKey}`, {
 });
 
 /* Smooth scrolling */
-const aboutLink = document.querySelector(".nav-link--about");
-const testimonialsLink = document.querySelector(".nav-link--testimonials");
-const projectsLink = document.querySelector(".nav-link--projects");
-const contactLink = document.querySelector(".nav-link--contact");
+const header = document.querySelector("header");
+let aboutLink;
+let testimonialsLink;
+let projectsLink;
+let contactLink;
 const aboutSection = document.getElementById("about-section");
 const testimonialsSection = document.getElementById("testimonials-section");
 const projectsSection = document.getElementById("projects-section");
 const contactSection = document.getElementById("contact-section");
+
+console.log(header.getBoundingClientRect().width);
+
+if (header.getBoundingClientRect().width <= 1024) {
+  aboutLink = document.querySelector(".responsive-link--about");
+  testimonialsLink = document.querySelector(".responsive-link--testimonials");
+  projectsLink = document.querySelector(".responsive-link--projects");
+  contactLink = document.querySelector(".responsive-link--contact");
+}
+
+if (header.getBoundingClientRect().width > 1024) {
+  aboutLink = document.querySelector(".nav-link--about");
+  testimonialsLink = document.querySelector(".nav-link--testimonials");
+  projectsLink = document.querySelector(".nav-link--projects");
+  contactLink = document.querySelector(".nav-link--contact");
+}
 
 const scroll = function (section) {
   section.scrollIntoView({ behavior: "smooth" });
