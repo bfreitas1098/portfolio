@@ -483,9 +483,98 @@ footer {
 
 /* Media Queries */
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 849px) {
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    max-width: 80rem;
+  }
+
+  .project-img {
+    height: 26rem;
+  }
+
+  .project-description {
+    font-size: 1.4rem;
+  }
+
+  .contact-img {
+    width: 28rem;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 920px) {
   .project-img {
     height: 28rem;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 999px) {
+  .contact-img {
+    width: 32rem;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1099px) {
+  h1 {
+    font-size: 9.5rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+    max-width: 74rem;
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1300px) {
+  .project-description {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .testimonial {
+    gap: 3rem;
+    padding: 3.2rem 2rem;
+  }
+
+  blockquote,
+  .form-container p {
+    font-size: 1.4rem;
+  }
+
+  .project-links-container {
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .website-link span {
+    font-size: 1.6rem;
+  }
+
+  .footer-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1049px) {
+  .project-links-container {
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  blockquote,
+  .form-container p {
+    font-size: 1.6rem;
+  }
+
+  .website-link span {
+    font-size: 1.8rem;
   }
 }
 
@@ -503,10 +592,6 @@ footer {
     grid-template-columns: 32rem 32rem;
   }
 
-  .section--contact {
-    padding: 12rem 10rem;
-  }
-
   .form-container p {
     padding-right: 4rem;
   }
@@ -514,8 +599,7 @@ footer {
   form,
   .input-container,
   input,
-  textarea,
-  .contact-img {
+  textarea {
     width: 32rem;
   }
 }
@@ -601,12 +685,6 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1049px) {
-  .project-links-container {
-    margin-bottom: 3rem;
-  }
-}
-
 @media only screen and (min-width: 1050px) and (max-width: 1199px) {
   .zenfem-links {
     margin-bottom: 5rem;
@@ -618,30 +696,12 @@ footer {
     font-size: 2.4rem;
   }
 
-  h1 {
-    font-size: 9.5rem;
-  }
-
-  h2 {
-    font-size: 3.6rem;
-    max-width: 74rem;
-  }
-
   h3 {
     font-size: 2.8rem;
   }
 
   h4 {
     font-size: 2.4rem;
-  }
-
-  .website-link span {
-    font-size: 1.8rem;
-  }
-
-  blockquote,
-  .form-container p {
-    font-size: 1.6rem;
   }
 
   h5 {
@@ -680,11 +740,5 @@ footer {
 @media only screen and (min-width: 1251px) and (max-width: 1299px) {
   .form-container {
     padding: 3.2rem 3rem 3.2rem 8rem;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  .project-description {
-    font-size: 1.6rem;
   }
 }
