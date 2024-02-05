@@ -16,11 +16,11 @@ fetch(`https://formsubmit.co/api/get-submissions/${apiKey}`, {
 });
 
 /* Smooth scrolling */
-const header = document.querySelector("header");
 let aboutLink;
 let testimonialsLink;
 let projectsLink;
 let contactLink;
+const header = document.querySelector("header");
 const aboutSection = document.getElementById("about-section");
 const testimonialsSection = document.getElementById("testimonials-section");
 const projectsSection = document.getElementById("projects-section");

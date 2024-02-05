@@ -390,8 +390,7 @@ input {
 }
 
 input,
-textarea,
-.input-container {
+textarea {
   width: 50rem;
 }
 
@@ -483,14 +482,196 @@ footer {
 
 /* Media Queries */
 
-@media only screen and (max-width: 849px) {
+@media only screen and (max-width: 549px) {
+  .testimonials-container {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 599px) {
+  .testimonials-container {
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .logo {
+    width: 16rem;
+    height: 12rem;
+  }
+
+  .menu-btn,
+  .close-btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .hero {
+    margin-top: 18rem;
+  }
+
+  .bio,
+  .feature-description {
+    font-size: 1.4rem;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    padding: 2.4rem 2rem;
+  }
+
+  .quote-container {
+    gap: 3.2rem;
+    height: max-content;
+    align-items: center;
+  }
+
+  blockquote {
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .testimonial-author {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .project-img {
+    width: 36rem;
+    height: 24rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+  .testimonial-img {
+    width: 12.5rem;
+  }
+
+  .testimonial-img,
+  .quote-container {
+    height: 15rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 739px) {
+  blockquote,
+  .testimonial-author {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .testimonial {
+    padding: 2.6rem 1.6rem;
+  }
+
+  .project-img {
+    width: 42rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 849px) {
+  .project-img {
+    height: 26rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+  .bio,
+  .feature-description {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .menu-btn,
+  .close-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .section {
+    padding: 12rem 6rem;
+  }
+
+  header {
+    padding: 0 6rem 23.1rem;
+  }
+
+  .nav-link {
+    font-size: 2.4rem;
+  }
+
+  .intro-line {
+    font-size: 2rem;
+  }
+
+  .arrow {
+    height: 10rem;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    max-width: 44rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 2.8rem;
+  }
+
+  .project-description {
+    font-size: 1.6rem;
+  }
+
+  .website-link span {
+    font-size: 1.8rem;
+  }
+
+  .form-container p {
+    font-size: 1.6rem;
+  }
+
+  .submit-btn {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 799px) {
+  .form-container p {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 849px) {
+  header {
+    padding: 0 9rem 23.1rem;
+  }
+
   .intro-line {
     font-size: 2.2rem;
   }
 
   .arrow {
     height: 12rem;
-    transform: translateX(-1.5rem);
   }
 
   h1 {
@@ -499,15 +680,132 @@ footer {
 
   h2 {
     font-size: 3.2rem;
-    max-width: 80rem;
+    max-width: 66rem;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 899px) {
+  .submit-btn {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+  .section {
+    padding: 12rem 8rem;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .nav-link {
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1099px) {
+  h3 {
+    font-size: 2.8rem;
   }
 
-  .project-img {
-    height: 26rem;
+  h4 {
+    font-size: 2.4rem;
   }
 
+  h5 {
+    font-size: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 899px) {
+  blockquote {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  .feature {
+    padding-right: 10rem;
+  }
+
+  .testimonial {
+    gap: 2.4rem;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 4rem;
+  }
+
+  .form-container {
+    padding: 3.2rem 3rem;
+  }
+
+  .contact-img {
+    display: none;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 849px) {
   .project-description {
     font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+  .testimonial {
+    gap: 3rem;
+    padding: 3.2rem 2rem;
+  }
+
+  .website-link span {
+    font-size: 1.6rem;
+  }
+
+  .form-container p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 999px) {
+  form,
+  .input-container,
+  input,
+  textarea {
+    width: 32rem;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .project-img {
+    width: 32rem;
+  }
+
+  .form-container {
+    padding: 3.2rem 1.5rem 3.2rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1149px) {
+  .project {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 849px) {
+  .arrow {
+    transform: translateX(-1.5rem);
   }
 
   .contact-img {
@@ -549,23 +847,9 @@ footer {
 }
 
 @media only screen and (max-width: 899px) {
-  .testimonial {
-    gap: 3rem;
-    padding: 3.2rem 2rem;
-  }
-
-  blockquote,
-  .form-container p {
-    font-size: 1.4rem;
-  }
-
   .project-links-container {
     margin-bottom: 2rem;
     gap: 1rem;
-  }
-
-  .website-link span {
-    font-size: 1.6rem;
   }
 
   .form-container {
@@ -578,10 +862,6 @@ footer {
 
   input {
     height: 5rem;
-  }
-
-  .submit-btn {
-    font-size: 2.4rem;
   }
 
   .footer-icon {
@@ -608,15 +888,6 @@ footer {
 }
 
 @media only screen and (max-width: 999px) {
-  .section {
-    padding: 12rem 8rem;
-  }
-
-  .bio,
-  .feature-description {
-    font-size: 1.8rem;
-  }
-
   .features-container {
     grid-template-columns: 32rem 32rem;
   }
@@ -624,21 +895,12 @@ footer {
   .form-container p {
     padding-right: 4rem;
   }
-
-  form,
-  .input-container,
-  input,
-  textarea {
-    width: 32rem;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
   .menu-btn,
   .close-btn {
     color: var(--primary-color-light);
-    width: 5rem;
-    height: 5rem;
     cursor: pointer;
   }
 
@@ -670,10 +932,6 @@ footer {
     transform: translateY(9rem) translateX(-2rem);
     list-style: none;
   }
-
-  .nav-link {
-    font-size: 2.8rem;
-  }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1099px) {
@@ -698,16 +956,6 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .project-img {
-    width: 32rem;
-  }
-
-  .form-container {
-    padding: 3.2rem 1.5rem 3.2rem 3rem;
-  }
-}
-
 @media only screen and (min-width: 1025px) and (max-width: 1149px) {
   .form-container {
     padding: 3.2rem 4rem;
@@ -717,20 +965,6 @@ footer {
 @media only screen and (min-width: 1050px) and (max-width: 1199px) {
   .zenfem-links {
     margin-bottom: 5rem;
-  }
-}
-
-@media only screen and (max-width: 1099px) {
-  h3 {
-    font-size: 2.8rem;
-  }
-
-  h4 {
-    font-size: 2.4rem;
-  }
-
-  h5 {
-    font-size: 3.2rem;
   }
 }
 
@@ -753,12 +987,6 @@ footer {
   textarea,
   .contact-img {
     width: 40rem;
-  }
-}
-
-@media only screen and (max-width: 1149px) {
-  .project {
-    padding-right: 0;
   }
 }
 
