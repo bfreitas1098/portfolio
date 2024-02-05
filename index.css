@@ -482,13 +482,202 @@ footer {
 
 /* Media Queries */
 
-@media only screen and (max-width: 549px) {
+@media only screen and (max-width: 449px) {
+  .project {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 499px) {
+  .project {
+    padding-right: 6rem;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .nav-link {
+    font-size: 2rem;
+  }
+
+  header {
+    padding: 0 4rem 23.1rem;
+  }
+
+  .hero {
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    max-width: 40rem;
+  }
+
+  .intro-line {
+    font-size: 1.8rem;
+  }
+
+  .arrow {
+    height: 8rem;
+    transform: translateX(-1rem) translateY(0.5rem);
+  }
+
+  .section {
+    padding: 12rem 4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  blockquote {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-author {
+    font-size: 1rem;
+  }
+
+  .testimonial-img {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .project-img {
+    width: 30rem;
+    height: 18rem;
+  }
+
+  .project-description,
+  label,
+  .form-container p {
+    font-size: 1.4rem;
+  }
+
+  .form-container p {
+    padding-right: 2rem;
+  }
+
+  h5 {
+    font-size: 2.4rem;
+  }
+
+  input {
+    height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  blockquote {
+    font-size: 1.4rem;
+  }
+
+  .testimonial-author {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .project-img {
+    width: 36rem;
+    height: 24rem;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+  .section {
+    padding: 12rem 6rem;
+  }
+
+  header {
+    padding: 0 6rem 23.1rem;
+  }
+
+  .nav-link {
+    font-size: 2.4rem;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    max-width: 44rem;
+  }
+
+  .intro-line {
+    font-size: 2rem;
+  }
+
+  .arrow {
+    height: 10rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    font-size: 1.6rem;
+  }
+
+  .form-container p {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .project {
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 849px) {
+  .arrow {
+    transform: translateX(-1.5rem);
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 899px) {
+  input {
+    height: 5rem;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+  .form-container p {
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 449px),
+  (min-width: 500px) and (max-width: 549px) {
   .testimonials-container {
     padding: 0 2rem;
   }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 599px) {
+@media only screen and (min-width: 450px) and (max-width: 499px),
+  (min-width: 550px) and (max-width: 599px) {
   .testimonials-container {
     padding: 0 4rem;
   }
@@ -515,9 +704,13 @@ footer {
     font-size: 1.4rem;
   }
 
+  .feature {
+    padding-right: 6rem;
+  }
+
   .testimonial {
     flex-direction: column;
-    padding: 2.4rem 2rem;
+    padding: 2.4rem 1.8rem;
   }
 
   .quote-container {
@@ -527,23 +720,12 @@ footer {
   }
 
   blockquote {
-    font-size: 1.4rem;
     width: 100%;
     text-align: center;
   }
 
-  .testimonial-author {
-    font-size: 1.2rem;
-  }
-
-  .testimonial-img {
-    width: 20rem;
-    height: 20rem;
-  }
-
-  .project-img {
-    width: 36rem;
-    height: 24rem;
+  footer {
+    margin-top: 22rem;
   }
 }
 
@@ -566,6 +748,10 @@ footer {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 799px) {
+  .feature {
+    padding-right: 10rem;
+  }
+
   .testimonial {
     padding: 2.6rem 1.6rem;
   }
@@ -597,57 +783,8 @@ footer {
 }
 
 @media only screen and (max-width: 699px) {
-  .section {
-    padding: 12rem 6rem;
-  }
-
-  header {
-    padding: 0 6rem 23.1rem;
-  }
-
-  .nav-link {
-    font-size: 2.4rem;
-  }
-
-  .intro-line {
-    font-size: 2rem;
-  }
-
-  .arrow {
-    height: 10rem;
-  }
-
-  h1 {
-    font-size: 7rem;
-  }
-
-  h2 {
-    font-size: 2.8rem;
-    max-width: 44rem;
-  }
-
-  h3 {
-    font-size: 2.4rem;
-  }
-
-  h4 {
-    font-size: 2rem;
-  }
-
-  h5 {
-    font-size: 2.8rem;
-  }
-
-  .project-description {
-    font-size: 1.6rem;
-  }
-
   .website-link span {
     font-size: 1.8rem;
-  }
-
-  .form-container p {
-    font-size: 1.6rem;
   }
 
   .submit-btn {
@@ -729,10 +866,6 @@ footer {
     gap: 6.4rem;
   }
 
-  .feature {
-    padding-right: 10rem;
-  }
-
   .testimonial {
     gap: 2.4rem;
   }
@@ -740,7 +873,6 @@ footer {
   .project {
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 4rem;
   }
 
   .form-container {
@@ -804,10 +936,6 @@ footer {
 }
 
 @media only screen and (max-width: 849px) {
-  .arrow {
-    transform: translateX(-1.5rem);
-  }
-
   .contact-img {
     width: 28rem;
   }
@@ -860,10 +988,6 @@ footer {
     gap: 3.6rem;
   }
 
-  input {
-    height: 5rem;
-  }
-
   .footer-icon {
     width: 4.8rem;
     height: 4.8rem;
@@ -890,10 +1014,6 @@ footer {
 @media only screen and (max-width: 999px) {
   .features-container {
     grid-template-columns: 32rem 32rem;
-  }
-
-  .form-container p {
-    padding-right: 4rem;
   }
 }
 
