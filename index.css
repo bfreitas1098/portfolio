@@ -483,14 +483,30 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width: 449px) {
+  h2 {
+    max-width: 32rem;
+  }
+
   .project {
     padding-right: 0;
   }
 }
 
+.form-container p {
+  font-size: 1.2rem;
+}
+
 @media only screen and (min-width: 450px) and (max-width: 499px) {
+  h2 {
+    max-width: 40rem;
+  }
+
   .project {
     padding-right: 6rem;
+  }
+
+  .form-container p {
+    font-size: 1.4rem;
   }
 }
 
@@ -513,7 +529,6 @@ footer {
 
   h2 {
     font-size: 2.4rem;
-    max-width: 40rem;
   }
 
   .intro-line {
@@ -556,8 +571,7 @@ footer {
   }
 
   .project-description,
-  label,
-  .form-container p {
+  label {
     font-size: 1.4rem;
   }
 
@@ -571,6 +585,10 @@ footer {
 
   input {
     height: 4rem;
+  }
+
+  .submit-btn {
+    font-size: 1.6rem;
   }
 }
 
@@ -642,6 +660,10 @@ footer {
 
   h5 {
     font-size: 2.8rem;
+  }
+
+  .submit-btn {
+    font-size: 2rem;
   }
 }
 
@@ -785,10 +807,6 @@ footer {
 @media only screen and (max-width: 699px) {
   .website-link span {
     font-size: 1.8rem;
-  }
-
-  .submit-btn {
-    font-size: 2rem;
   }
 }
 
