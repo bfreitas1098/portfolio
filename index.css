@@ -359,7 +359,6 @@ h5 {
   font-size: 2rem;
   line-height: 125%;
   margin-bottom: 5px;
-  padding-right: 12rem;
 }
 
 h5 {
@@ -433,7 +432,8 @@ textarea {
 }
 
 .contact-img {
-  width: 46rem;
+  min-width: 46rem;
+  max-width: 60rem;
 }
 
 /* Footer */
@@ -1412,5 +1412,74 @@ footer {
 @media only screen and (min-width: 1251px) and (max-width: 1299px) {
   .form-container {
     padding: 3.2rem 3rem 3.2rem 8rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bio {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1999px) {
+  * {
+    font-size: 70%;
+  }
+
+  .projects-container,
+  .contact-form,
+  .testimonials-container,
+  .features-container {
+    max-width: 70vw;
+  }
+
+  .bio {
+    max-width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 2000px) {
+  header {
+    padding: 4rem 16rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .projects-container,
+  .contact-form,
+  .testimonials-container,
+  .features-container {
+    max-width: 60vw;
+  }
+
+  .bio {
+    max-width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 2499px) {
+  * {
+    font-size: 80%;
+  }
+
+  header {
+    padding: 4rem 19rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  * {
+    font-size: 90%;
+  }
+
+  header {
+    padding: 4rem 25rem 21.3rem;
   }
 }
