@@ -482,53 +482,165 @@ footer {
 
 /* Media Queries */
 
-@media only screen and (max-width: 449px) {
-  h2 {
-    max-width: 32rem;
-  }
-
-  .project {
-    padding-right: 0;
-  }
-}
-
-.form-container p {
-  font-size: 1.2rem;
-}
-
-@media only screen and (min-width: 450px) and (max-width: 499px) {
-  h2 {
-    max-width: 40rem;
-  }
-
-  .project {
-    padding-right: 6rem;
-  }
-
-  .form-container p {
-    font-size: 1.4rem;
-  }
-}
-
-@media only screen and (max-width: 499px) {
-  .nav-link {
-    font-size: 2rem;
+@media only screen and (max-width: 349px) {
+  .section {
+    padding: 12rem 2rem;
   }
 
   header {
-    padding: 0 4rem 23.1rem;
+    padding: 0 2rem 13.1rem;
+  }
+
+  .feature {
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 499px) {
+  .section {
+    padding: 12rem 4rem;
+  }
+
+  header {
+    padding: 0 4rem 13.1rem;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 599px) {
+  .feature {
+    padding-right: 6rem;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .logo {
+    width: 14rem;
+    height: 10rem;
+  }
+
+  .menu-btn,
+  .close-btn {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .responsive-nav {
+    transform: translateY(6rem) translateX(-1rem);
+  }
+
+  .nav-link {
+    font-size: 1.6rem;
   }
 
   .hero {
-    gap: 2rem;
+    margin-top: 16rem;
+  }
+
+  .intro-line {
+    font-size: 1.4rem;
+  }
+
+  .arrow {
+    height: 7rem;
+    transform: translateX(-1rem);
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .bio,
+  .feature-description {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  blockquote {
+    font-size: 1rem;
+  }
+
+  .testimonial-author {
+    font-size: 8px;
+  }
+
+  .testimonial-img {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .project-img {
+    width: 26rem;
+    height: 16rem;
+  }
+
+  .website-link span {
+    font-size: 1.4rem;
+  }
+
+  .project-description,
+  label {
+    font-size: 1.2rem;
+  }
+
+  .stack-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .form-container p {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  input {
+    height: 3rem;
+  }
+
+  .submit-btn {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    margin-top: 18rem;
+  }
+
+  .footer-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 449px) {
+  .form-container p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 449px),
+  (min-width: 500px) and (max-width: 549px) {
+  .testimonials-container {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+  .nav-link {
+    font-size: 2rem;
   }
 
   .intro-line {
@@ -540,8 +652,12 @@ footer {
     transform: translateX(-1rem) translateY(0.5rem);
   }
 
-  .section {
-    padding: 12rem 4rem;
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
   }
 
   h3 {
@@ -570,11 +686,6 @@ footer {
     height: 18rem;
   }
 
-  .project-description,
-  label {
-    font-size: 1.4rem;
-  }
-
   .form-container p {
     padding-right: 2rem;
   }
@@ -589,6 +700,96 @@ footer {
 
   .submit-btn {
     font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+  .logo {
+    width: 16rem;
+    height: 12rem;
+  }
+
+  .menu-btn,
+  .close-btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .hero {
+    margin-top: 18rem;
+  }
+
+  .bio,
+  .feature-description {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    margin-top: 22rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 699px) {
+  .website-link span {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 899px) {
+  .footer-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1000px) {
+  .responsive-nav {
+    transform: translateY(9rem) translateX(-2rem);
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  h2 {
+    max-width: 32rem;
+  }
+
+  .project {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 499px),
+  (min-width: 550px) and (max-width: 599px) {
+  .testimonials-container {
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 499px) {
+  h2 {
+    max-width: 40rem;
+  }
+
+  .project {
+    padding-right: 6rem;
+  }
+
+  .form-container p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .hero {
+    gap: 2rem;
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+  }
+
+  input:not(.submit-btn) {
+    font-size: 1.2rem;
   }
 }
 
@@ -655,7 +856,7 @@ footer {
   }
 
   .form-container p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   h5 {
@@ -670,6 +871,10 @@ footer {
 @media only screen and (min-width: 500px) and (max-width: 799px) {
   .project {
     padding-right: 4rem;
+  }
+
+  input:not(.submit-btn) {
+    font-size: 1.6rem;
   }
 }
 
@@ -691,45 +896,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 449px),
-  (min-width: 500px) and (max-width: 549px) {
-  .testimonials-container {
-    padding: 0 2rem;
-  }
-}
-
-@media only screen and (min-width: 450px) and (max-width: 499px),
-  (min-width: 550px) and (max-width: 599px) {
-  .testimonials-container {
-    padding: 0 4rem;
-  }
-}
-
 @media only screen and (max-width: 599px) {
-  .logo {
-    width: 16rem;
-    height: 12rem;
-  }
-
-  .menu-btn,
-  .close-btn {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .hero {
-    margin-top: 18rem;
-  }
-
-  .bio,
-  .feature-description {
-    font-size: 1.4rem;
-  }
-
-  .feature {
-    padding-right: 6rem;
-  }
-
   .testimonial {
     flex-direction: column;
     padding: 2.4rem 1.8rem;
@@ -744,10 +911,6 @@ footer {
   blockquote {
     width: 100%;
     text-align: center;
-  }
-
-  footer {
-    margin-top: 22rem;
   }
 }
 
@@ -801,12 +964,6 @@ footer {
   .close-btn {
     width: 5rem;
     height: 5rem;
-  }
-}
-
-@media only screen and (max-width: 699px) {
-  .website-link span {
-    font-size: 1.8rem;
   }
 }
 
@@ -947,6 +1104,12 @@ footer {
   }
 }
 
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+  input:not(.submit-btn) {
+    font-size: 1.8rem;
+  }
+}
+
 @media only screen and (min-width: 800px) and (max-width: 1149px) {
   .project {
     padding-right: 0;
@@ -1005,11 +1168,6 @@ footer {
   form {
     gap: 3.6rem;
   }
-
-  .footer-icon {
-    width: 4.8rem;
-    height: 4.8rem;
-  }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1049px) {
@@ -1047,7 +1205,7 @@ footer {
   }
 
   nav {
-    height: 18rem;
+    height: 12rem;
   }
 
   .navigation {
@@ -1067,7 +1225,6 @@ footer {
     align-items: flex-end;
     text-align: right;
     gap: 2rem;
-    transform: translateY(9rem) translateX(-2rem);
     list-style: none;
   }
 }
