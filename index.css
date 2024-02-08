@@ -484,9 +484,13 @@ footer {
 
 @media only screen and (max-width: 299px) {
   .logo {
-    width: 12rem;
     height: 8rem;
     transform: translateX(-3rem);
+  }
+
+  .logo,
+  .testimonial-img {
+    width: 12rem;
   }
 
   .menu-btn,
@@ -500,7 +504,9 @@ footer {
     gap: 1.2rem;
   }
 
-  .nav-link {
+  .nav-link,
+  h2,
+  h3 {
     font-size: 1.4rem;
   }
 
@@ -508,7 +514,11 @@ footer {
     margin-top: 12rem;
   }
 
-  .intro-line {
+  .intro-line,
+  .bio,
+  .feature-description,
+  .project-description,
+  label {
     font-size: 1rem;
   }
 
@@ -521,24 +531,14 @@ footer {
     font-size: 3.6rem;
   }
 
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-size: 1.4rem;
-  }
-
-  .bio,
-  .feature-description {
-    font-size: 1rem;
-  }
-
-  h4 {
+  h4,
+  .website-link span,
+  .submit-btn {
     font-size: 1.2rem;
   }
 
-  blockquote {
+  blockquote,
+  .form-container p {
     font-size: 8px;
   }
 
@@ -547,7 +547,6 @@ footer {
   }
 
   .testimonial-img {
-    width: 12rem;
     height: 12rem;
   }
 
@@ -556,31 +555,13 @@ footer {
     height: 16rem;
   }
 
-  .website-link span {
-    font-size: 1.2rem;
-  }
-
-  .project-description,
-  label {
-    font-size: 1rem;
-  }
-
   .stack-icon {
     width: 2.8rem;
     height: 2.8rem;
   }
 
-  .form-container p {
-    font-size: 8px;
-    padding-right: 0;
-  }
-
   h5 {
     font-size: 1.6rem;
-  }
-
-  .submit-btn {
-    font-size: 1.2rem;
   }
 
   footer {
@@ -588,10 +569,21 @@ footer {
   }
 }
 
+@media only screen and (max-width: 299px),
+  (min-width: 1000px) and (max-width: 1300px) {
+  .form-container p {
+    padding-right: 0;
+  }
+}
+
 @media only screen and (min-width: 300px) and (max-width: 399px) {
   .logo {
-    width: 14rem;
     height: 10rem;
+  }
+
+  .logo,
+  .testimonial-img {
+    width: 14rem;
   }
 
   .menu-btn,
@@ -605,7 +597,8 @@ footer {
     gap: 1.8rem;
   }
 
-  .nav-link {
+  .nav-link,
+  h4 {
     font-size: 1.6rem;
   }
 
@@ -613,7 +606,9 @@ footer {
     margin-top: 16rem;
   }
 
-  .intro-line {
+  .intro-line,
+  .website-link span,
+  .submit-btn {
     font-size: 1.4rem;
   }
 
@@ -626,24 +621,20 @@ footer {
     font-size: 5rem;
   }
 
-  h2 {
-    font-size: 1.8rem;
-  }
-
+  h2,
   h3 {
     font-size: 1.8rem;
   }
 
   .bio,
-  .feature-description {
+  .feature-description,
+  .project-description,
+  label {
     font-size: 1.2rem;
   }
 
-  h4 {
-    font-size: 1.6rem;
-  }
-
-  blockquote {
+  blockquote,
+  .form-container p {
     font-size: 1rem;
   }
 
@@ -652,7 +643,6 @@ footer {
   }
 
   .testimonial-img {
-    width: 14rem;
     height: 14rem;
   }
 
@@ -661,31 +651,17 @@ footer {
     height: 16rem;
   }
 
-  .website-link span {
-    font-size: 1.4rem;
-  }
-
-  .project-description,
-  label {
-    font-size: 1.2rem;
-  }
-
   .stack-icon {
     width: 3.2rem;
     height: 3.2rem;
   }
 
   .form-container p {
-    font-size: 1rem;
     padding-right: 1rem;
   }
 
   h5 {
     font-size: 2rem;
-  }
-
-  .submit-btn {
-    font-size: 1.4rem;
   }
 
   footer {
@@ -761,11 +737,13 @@ footer {
 }
 
 @media only screen and (min-width: 400px) and (max-width: 499px) {
-  .nav-link {
+  .nav-link,
+  h3 {
     font-size: 2rem;
   }
 
-  .intro-line {
+  .intro-line,
+  h4 {
     font-size: 1.8rem;
   }
 
@@ -778,16 +756,9 @@ footer {
     font-size: 6rem;
   }
 
-  h2 {
+  h2,
+  h5 {
     font-size: 2.4rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.8rem;
   }
 
   blockquote {
@@ -810,10 +781,6 @@ footer {
 
   .form-container p {
     padding-right: 2rem;
-  }
-
-  h5 {
-    font-size: 2.4rem;
   }
 
   input {
@@ -851,7 +818,8 @@ footer {
   }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 699px) {
+@media only screen and (min-width: 400px) and (max-width: 699px),
+  (min-width: 900px) and (max-width: 1099px) {
   .website-link span {
     font-size: 1.8rem;
   }
@@ -881,7 +849,10 @@ footer {
   h2 {
     max-width: 32rem;
   }
+}
 
+@media only screen and (max-width: 449px),
+  (min-width: 800px) and (max-width: 1149px) {
   .project {
     padding-right: 0;
   }
@@ -902,7 +873,10 @@ footer {
   .project {
     padding-right: 6rem;
   }
+}
 
+@media only screen and (min-width: 450px) and (max-width: 699px),
+  (min-width: 800px) and (max-width: 999px) {
   .form-container p {
     font-size: 1.4rem;
   }
@@ -923,10 +897,6 @@ footer {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 599px) {
-  blockquote {
-    font-size: 1.4rem;
-  }
-
   .testimonial-author {
     font-size: 1.2rem;
   }
@@ -942,6 +912,13 @@ footer {
   }
 }
 
+@media only screen and (min-width: 500px) and (max-width: 599px),
+  (min-width: 740px) and (max-width: 899px) {
+  blockquote {
+    font-size: 1.4rem;
+  }
+}
+
 @media only screen and (min-width: 500px) and (max-width: 699px) {
   .section {
     padding: 12rem 6rem;
@@ -951,7 +928,8 @@ footer {
     padding: 0 6rem 23.1rem;
   }
 
-  .nav-link {
+  .nav-link,
+  h3 {
     font-size: 2.4rem;
   }
 
@@ -960,40 +938,29 @@ footer {
   }
 
   h2 {
-    font-size: 2.8rem;
     max-width: 44rem;
   }
 
-  .intro-line {
+  h2,
+  h5 {
+    font-size: 2.8rem;
+  }
+
+  .intro-line,
+  h4,
+  .submit-btn {
     font-size: 2rem;
   }
 
   .arrow {
     height: 10rem;
   }
+}
 
-  h3 {
-    font-size: 2.4rem;
-  }
-
-  h4 {
-    font-size: 2rem;
-  }
-
+@media only screen and (min-width: 500px) and (max-width: 699px),
+  (min-width: 850px) and (max-width: 1300px) {
   .project-description {
     font-size: 1.6rem;
-  }
-
-  .form-container p {
-    font-size: 1.4rem;
-  }
-
-  h5 {
-    font-size: 2.8rem;
-  }
-
-  .submit-btn {
-    font-size: 2rem;
   }
 }
 
@@ -1016,12 +983,6 @@ footer {
 @media only screen and (min-width: 500px) and (max-width: 899px) {
   input {
     height: 5rem;
-  }
-}
-
-@media only screen and (min-width: 500px) and (max-width: 999px) {
-  .form-container p {
-    padding-right: 4rem;
   }
 }
 
@@ -1096,7 +1057,8 @@ footer {
   }
 }
 
-@media only screen and (min-width: 700px) and (max-width: 799px) {
+@media only screen and (min-width: 700px) and (max-width: 799px),
+  (min-width: 1100px) and (max-width: 1250px) {
   .form-container p {
     font-size: 1.8rem;
   }
@@ -1157,12 +1119,6 @@ footer {
   }
 }
 
-@media only screen and (min-width: 740px) and (max-width: 899px) {
-  blockquote {
-    font-size: 1.4rem;
-  }
-}
-
 @media only screen and (max-width: 799px) {
   .features-container {
     display: flex;
@@ -1204,10 +1160,6 @@ footer {
   .website-link span {
     font-size: 1.6rem;
   }
-
-  .form-container p {
-    font-size: 1.4rem;
-  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 999px) {
@@ -1235,15 +1187,9 @@ footer {
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1149px) {
-  .project {
-    padding-right: 0;
-  }
-}
-
 @media only screen and (max-width: 849px) {
   .contact-img {
-    width: 28rem;
+    min-width: 28rem;
   }
 }
 
@@ -1255,7 +1201,7 @@ footer {
 
 @media only screen and (min-width: 850px) and (max-width: 999px) {
   .contact-img {
-    width: 32rem;
+    min-width: 32rem;
   }
 }
 
@@ -1271,12 +1217,6 @@ footer {
   h2 {
     font-size: 3.6rem;
     max-width: 74rem;
-  }
-}
-
-@media only screen and (min-width: 850px) and (max-width: 1300px) {
-  .project-description {
-    font-size: 1.6rem;
   }
 }
 
@@ -1302,13 +1242,8 @@ footer {
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1099px) {
-  blockquote,
-  .form-container p {
+  blockquote {
     font-size: 1.6rem;
-  }
-
-  .website-link span {
-    font-size: 1.8rem;
   }
 }
 
@@ -1357,15 +1292,16 @@ footer {
   form,
   .input-container,
   input,
-  textarea,
-  .contact-img {
+  textarea {
     width: 36rem;
   }
-}
 
-@media only screen and (min-width: 1000px) and (max-width: 1300px) {
   .form-container p {
-    padding-right: 0;
+    font-size: 1.6rem;
+  }
+
+  .contact-img {
+    min-width: 36rem;
   }
 }
 
@@ -1394,18 +1330,17 @@ footer {
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1250px) {
-  .form-container p {
-    font-size: 1.8rem;
-  }
-
   h5 {
     font-size: 4rem;
   }
 
   input,
-  textarea,
-  .contact-img {
+  textarea {
     width: 40rem;
+  }
+
+  .contact-img {
+    min-width: 40rem;
   }
 }
 
@@ -1451,16 +1386,26 @@ footer {
   }
 }
 
+@media only screen and (min-width: 2000px) {
+  strong {
+    font-size: 1rem;
+  }
+
+  .project-links-container {
+    margin-bottom: 3.2rem;
+  }
+}
+
 @media only screen and (min-width: 2000px) and (max-width: 3999px) {
   .projects-container,
   .contact-form,
   .testimonials-container,
   .features-container {
-    max-width: 60vw;
+    max-width: 65vw;
   }
 
   .bio {
-    max-width: 40vw;
+    max-width: 45vw;
   }
 }
 
