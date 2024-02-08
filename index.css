@@ -1451,7 +1451,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2000px) and (max-width: 3999px) {
   .projects-container,
   .contact-form,
   .testimonials-container,
@@ -1474,12 +1474,165 @@ footer {
   }
 }
 
-@media only screen and (min-width: 2500px) {
+@media only screen and (min-width: 2500px) and (max-width: 2999px) {
   * {
     font-size: 90%;
   }
 
   header {
     padding: 4rem 25rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 3000px) and (max-width: 3499px) {
+  * {
+    font-size: 95%;
+  }
+
+  header {
+    padding: 4rem 30rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 3500px) and (max-width: 3999px) {
+  * {
+    font-size: 100%;
+  }
+
+  header {
+    padding: 4rem 35rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 4000px) {
+  .projects-container,
+  .contact-form,
+  .testimonials-container,
+  .features-container {
+    max-width: 40vw;
+  }
+
+  .bio {
+    max-width: 30vw;
+  }
+}
+
+@media only screen and (min-width: 4000px) and (max-width: 4499px) {
+  * {
+    font-size: 105%;
+  }
+
+  header {
+    padding: 4rem 40rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 4500px) and (max-width: 4999px) {
+  * {
+    font-size: 110%;
+  }
+
+  header {
+    padding: 4rem 45rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 5000px) and (max-width: 5499px) {
+  * {
+    font-size: 115%;
+  }
+
+  header {
+    padding: 4rem 50rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 5500px) and (max-width: 5999px) {
+  * {
+    font-size: 120%;
+  }
+
+  header {
+    padding: 4rem 55rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 6000px) and (max-width: 6499px) {
+  * {
+    font-size: 125%;
+  }
+
+  header {
+    padding: 4rem 60rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 6500px) and (max-width: 6999px) {
+  * {
+    font-size: 130%;
+  }
+
+  header {
+    padding: 4rem 65rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 7000px) and (max-width: 7499px) {
+  * {
+    font-size: 135%;
+  }
+
+  header {
+    padding: 4rem 70rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 7500px) and (max-width: 7999px) {
+  * {
+    font-size: 140%;
+  }
+
+  header {
+    padding: 4rem 75rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 8000px) and (max-width: 8499px) {
+  * {
+    font-size: 145%;
+  }
+
+  header {
+    padding: 4rem 80rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 8500px) and (max-width: 8999px) {
+  * {
+    font-size: 150%;
+  }
+
+  header {
+    padding: 4rem 85rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 9000px) and (max-width: 9499px) {
+  * {
+    font-size: 155%;
+  }
+
+  header {
+    padding: 4rem 90rem 21.3rem;
+  }
+}
+
+@media only screen and (min-width: 9500px) and (max-width: 9999px) {
+  * {
+    font-size: 160%;
+  }
+
+  header {
+    padding: 4rem 95rem 21.3rem;
   }
 }
