@@ -20,6 +20,7 @@ let aboutLink;
 let testimonialsLink;
 let projectsLink;
 let contactLink;
+const headerLink = document.querySelector(".logo");
 const header = document.querySelector("header");
 const aboutSection = document.getElementById("about-section");
 const testimonialsSection = document.getElementById("testimonials-section");
@@ -51,6 +52,7 @@ testimonialsLink.addEventListener(
 );
 projectsLink.addEventListener("click", scroll.bind(this, projectsSection));
 contactLink.addEventListener("click", scroll.bind(this, contactSection));
+headerLink.addEventListener("click", scroll.bind(this, header));
 
 /* Lazy loading images */
 const imgTargets = document.querySelectorAll("img[data-src]");
@@ -108,3 +110,24 @@ const responsiveLinks = [
 for (let i = 0; i < responsiveLinks.length; i++) {
   responsiveLinks[i].addEventListener("click", closeMenu);
 }
+
+/* Sticky nav */
+const nav = document.querySelector("nav");
+const navHeight = nav.getBoundingClientRect().height;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const stickyNav = (entries) => {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) nav.classList.add("sticky");
+    if (entry.isIntersecting) nav.classList.remove("sticky");
+  };
+
+  const headerObserver = new IntersectionObserver(stickyNav, {
+    root: null,
+    threshold: 0,
+    rootMargin: `-${navHeight}px`,
+  });
+
+  headerObserver.observe(header);
+});

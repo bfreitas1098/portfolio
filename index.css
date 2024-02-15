@@ -52,6 +52,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 13rem;
+  z-index: 2000;
+}
+
+.sticky {
+  position: sticky;
+  background-color: rgb(27, 31, 34);
+  width: 100vw;
+  top: 0;
 }
 
 .hidden {
@@ -83,6 +92,7 @@ nav {
   width: 20rem;
   height: 15rem;
   transform: translateX(-5rem);
+  cursor: pointer;
 }
 
 .hero {
@@ -674,6 +684,10 @@ footer {
     padding: 12rem 2rem;
   }
 
+  nav {
+    padding: 0 2rem;
+  }
+
   header {
     padding: 0 2rem 13.1rem;
   }
@@ -686,6 +700,10 @@ footer {
 @media only screen and (min-width: 350px) and (max-width: 499px) {
   .section {
     padding: 12rem 4rem;
+  }
+
+  nav {
+    padding: 0 4rem;
   }
 
   header {
@@ -924,8 +942,12 @@ footer {
     padding: 12rem 6rem;
   }
 
+  nav {
+    padding: 0 6rem;
+  }
+
   header {
-    padding: 0 6rem 23.1rem;
+    padding: 2rem 6rem 23.1rem;
   }
 
   .nav-link,
@@ -1065,8 +1087,12 @@ footer {
 }
 
 @media only screen and (min-width: 700px) and (max-width: 849px) {
+  nav {
+    padding: 0 9rem;
+  }
+
   header {
-    padding: 0 9rem 23.1rem;
+    padding: 2rem 9rem 23.1rem;
   }
 
   .intro-line {
@@ -1381,6 +1407,10 @@ footer {
 }
 
 @media only screen and (min-width: 1700px) and (max-width: 2000px) {
+  nav {
+    padding: 0 16rem;
+  }
+
   header {
     padding: 4rem 16rem 21.3rem;
   }
@@ -1414,6 +1444,10 @@ footer {
     font-size: 80%;
   }
 
+  nav {
+    padding: 0 19rem;
+  }
+
   header {
     padding: 4rem 19rem 21.3rem;
   }
@@ -1422,6 +1456,10 @@ footer {
 @media only screen and (min-width: 2500px) and (max-width: 2999px) {
   * {
     font-size: 90%;
+  }
+
+  nav {
+    padding: 0 25rem;
   }
 
   header {
@@ -1434,6 +1472,10 @@ footer {
     font-size: 95%;
   }
 
+  nav {
+    padding: 0 30rem;
+  }
+
   header {
     padding: 4rem 30rem 21.3rem;
   }
@@ -1442,6 +1484,10 @@ footer {
 @media only screen and (min-width: 3500px) and (max-width: 3999px) {
   * {
     font-size: 100%;
+  }
+
+  nav {
+    padding: 0 35rem;
   }
 
   header {
@@ -1467,6 +1513,10 @@ footer {
     font-size: 105%;
   }
 
+  nav {
+    padding: 0 40rem;
+  }
+
   header {
     padding: 4rem 40rem 21.3rem;
   }
@@ -1475,6 +1525,10 @@ footer {
 @media only screen and (min-width: 4500px) and (max-width: 4999px) {
   * {
     font-size: 110%;
+  }
+
+  nav {
+    padding: 0 45rem;
   }
 
   header {
@@ -1487,6 +1541,10 @@ footer {
     font-size: 115%;
   }
 
+  nav {
+    padding: 0 50rem;
+  }
+
   header {
     padding: 4rem 50rem 21.3rem;
   }
@@ -1495,6 +1553,10 @@ footer {
 @media only screen and (min-width: 5500px) and (max-width: 5999px) {
   * {
     font-size: 120%;
+  }
+
+  nav {
+    padding: 0 55rem;
   }
 
   header {
@@ -1507,6 +1569,10 @@ footer {
     font-size: 125%;
   }
 
+  nav {
+    padding: 0 60rem;
+  }
+
   header {
     padding: 4rem 60rem 21.3rem;
   }
@@ -1515,6 +1581,10 @@ footer {
 @media only screen and (min-width: 6500px) and (max-width: 6999px) {
   * {
     font-size: 130%;
+  }
+
+  nav {
+    padding: 0 65rem;
   }
 
   header {
@@ -1527,6 +1597,10 @@ footer {
     font-size: 135%;
   }
 
+  nav {
+    padding: 0 70rem;
+  }
+
   header {
     padding: 4rem 70rem 21.3rem;
   }
@@ -1535,6 +1609,10 @@ footer {
 @media only screen and (min-width: 7500px) and (max-width: 7999px) {
   * {
     font-size: 140%;
+  }
+
+  nav {
+    padding: 0 75rem;
   }
 
   header {
@@ -1547,6 +1625,10 @@ footer {
     font-size: 145%;
   }
 
+  nav {
+    padding: 0 80rem;
+  }
+
   header {
     padding: 4rem 80rem 21.3rem;
   }
@@ -1555,6 +1637,10 @@ footer {
 @media only screen and (min-width: 8500px) and (max-width: 8999px) {
   * {
     font-size: 150%;
+  }
+
+  nav {
+    padding: 0 85rem;
   }
 
   header {
@@ -1567,6 +1653,10 @@ footer {
     font-size: 155%;
   }
 
+  nav {
+    padding: 0 90rem;
+  }
+
   header {
     padding: 4rem 90rem 21.3rem;
   }
@@ -1575,6 +1665,10 @@ footer {
 @media only screen and (min-width: 9500px) and (max-width: 9999px) {
   * {
     font-size: 160%;
+  }
+
+  nav {
+    padding: 0 95rem;
   }
 
   header {
