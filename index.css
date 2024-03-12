@@ -688,6 +688,10 @@ footer {
     padding: 0 2rem;
   }
 
+  .responsive-nav {
+    padding: 2rem 2rem;
+  }
+
   header {
     padding: 0 2rem 13.1rem;
   }
@@ -704,6 +708,10 @@ footer {
 
   nav {
     padding: 0 4rem;
+  }
+
+  .responsive-nav {
+    padding: 2rem 4rem;
   }
 
   header {
@@ -946,6 +954,10 @@ footer {
     padding: 0 6rem;
   }
 
+  .responsive-nav {
+    padding: 2rem 6rem;
+  }
+
   header {
     padding: 2rem 6rem 23.1rem;
   }
@@ -1091,6 +1103,10 @@ footer {
     padding: 0 9rem;
   }
 
+  .responsive-nav {
+    padding: 2rem 9rem;
+  }
+
   header {
     padding: 2rem 9rem 23.1rem;
   }
@@ -1231,6 +1247,12 @@ footer {
   }
 }
 
+@media only screen and (min-width: 850px) and (max-width: 1000px) {
+  .responsive-nav {
+    padding: 2rem 13rem;
+  }
+}
+
 @media only screen and (min-width: 850px) and (max-width: 1099px) {
   .intro-line {
     font-size: 2.4rem;
@@ -1311,6 +1333,14 @@ footer {
     align-items: flex-end;
     text-align: right;
     list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  .bg {
+    background-color: rgb(27, 31, 34);
   }
 }
 

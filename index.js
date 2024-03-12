@@ -84,6 +84,7 @@ imgTargets.forEach((img) => imgObserver.observe(img));
 const responsiveNav = document.querySelector(".responsive-nav");
 const menuBtn = document.querySelector(".menu-btn");
 const closeBtn = document.querySelector(".close-btn");
+const nav = document.querySelector("nav");
 
 const openMenu = () => {
   responsiveNav.classList.remove("hidden");
@@ -112,15 +113,20 @@ for (let i = 0; i < responsiveLinks.length; i++) {
 }
 
 /* Sticky nav */
-const nav = document.querySelector("nav");
 const navHeight = nav.getBoundingClientRect().height;
 
 document.addEventListener("DOMContentLoaded", () => {
   const stickyNav = (entries) => {
     const [entry] = entries;
 
-    if (!entry.isIntersecting) nav.classList.add("sticky");
-    if (entry.isIntersecting) nav.classList.remove("sticky");
+    if (!entry.isIntersecting) {
+      nav.classList.add("sticky");
+      responsiveNav.classList.add("bg");
+    }
+    if (entry.isIntersecting) {
+      nav.classList.remove("sticky");
+      responsiveNav.classList.remove("bg");
+    }
   };
 
   const headerObserver = new IntersectionObserver(stickyNav, {
