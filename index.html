@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -84,7 +84,7 @@
           <li class="nav-link responsive-link--projects">My Projects</li>
           <li class="nav-link responsive-link--contact">Contact</li>
         </ul>
-        <ion-icon name="menu-outline" class="menu-btn"></ion-icon>
+        <ion-icon name="menu-outline" class="menu-btn hidden"></ion-icon>
         <ion-icon name="close-outline" class="close-btn hidden"></ion-icon>
       </div>
     </nav>
@@ -99,12 +99,18 @@
           />
         </div>
         <div class="headings">
-          <h1>Front-end<br />developer.</h1>
-          <h2>
-            Based in sunny south Florida, I create web experiences that meet
-            both businesses and users goals while still providing a visually
-            appealing product.
-          </h2>
+          <h1>Front-End Developer</h1>
+          <h2>React | JavaScript | Node | UI/UX</h2>
+          <span id="subtitle">
+            Building clean, responsive web applications and intuitive
+            user-focused interfaces.
+          </span>
+        </div>
+        <div class="button-container">
+          <a href="#projects-section"
+            ><button class="cta-btn">View Projects</button></a
+          >
+          <button class="cta-btn" id="resume-btn">Download Resume</button>
         </div>
       </div>
     </header>
@@ -247,7 +253,6 @@
               as well as a means of reaching new clients and creating new
               artwork. Each page consists of a different color scheme reflecting
               Melvin's eye for art.
-              <br /><strong>*IN DEVELOPMENT*</strong>
             </p>
             <div class="project-links-container">
               <a href="https://artistrybymel.netlify.app/" class="website-link"
@@ -287,16 +292,16 @@
         <div class="project">
           <a href="https://peninsulatitlellc.com/">
             <img
-              data-src="images/peninsula-title-ss.png"
-              alt="Screenshot of Peninsula Title"
+              data-src="images/premier-title-screenshot.png"
+              alt="Screenshot of Premier Title & Closing"
               class="project-img lazy-img"
             />
           </a>
           <div class="project-text-container">
             <p class="project-description">
-              Discover seamless title solutions with Peninsula Title! From
-              meticulous title searches to hassle-free escrow services, they
-              streamline your real estate transactions. Explore the
+              Discover seamless title solutions with Premier Title & Closing!
+              From meticulous title searches to hassle-free escrow services,
+              they streamline your real estate transactions. Explore the
               user-friendly website for efficient, reliable, and transparent
               title expertise.
             </p>
@@ -367,47 +372,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="project">
-          <a href="http://zenfem.community">
-            <img
-              data-src="images/zenfem-ss.png"
-              alt="Screenshot of Zenfem"
-              class="project-img lazy-img"
-            />
-          </a>
-          <div class="project-text-container">
-            <p class="project-description">
-              Connect with like-minded women at Zenfem – your go-to platform for
-              fostering friendships with a shared passion for a healthier
-              lifestyle. Discover fitness buddies, wellness partners, and
-              supportive friends who inspire your well-being journey.
-            </p>
-            <div class="project-links-container zenfem-links">
-              <a href="http://zenfem.community" class="website-link"
-                ><span>Visit Website</span
-                ><ion-icon
-                  name="arrow-forward-outline"
-                  class="link-icon"
-                ></ion-icon
-              ></a>
-              <a
-                href="https://github.com/bfreitas1098/zenfem"
-                class="website-link"
-                ><span>Github Repository</span
-                ><ion-icon
-                  name="arrow-forward-outline"
-                  class="link-icon"
-                ></ion-icon
-              ></a>
-            </div>
-            <div class="project-stack-container">
-              <ion-icon name="logo-html5" class="stack-icon"></ion-icon>
-              <ion-icon name="logo-css3" class="stack-icon css-icon"></ion-icon>
-              <ion-icon name="logo-javascript" class="stack-icon"></ion-icon>
-              <ion-icon name="logo-react" class="stack-icon"></ion-icon>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
     <!-- Contact section -->
@@ -470,7 +434,7 @@
         <img
           data-src="images/contact-img.jpeg"
           alt="A half-open Macbook laptop"
-          class="contact-img lazy-img"
+          class="contact-img lazy-img hidden"
         />
       </div>
     </section>
