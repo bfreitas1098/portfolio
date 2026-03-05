@@ -48,7 +48,7 @@ const scroll = function (section) {
 aboutLink.addEventListener("click", scroll.bind(this, aboutSection));
 testimonialsLink.addEventListener(
   "click",
-  scroll.bind(this, testimonialsSection)
+  scroll.bind(this, testimonialsSection),
 );
 projectsLink.addEventListener("click", scroll.bind(this, projectsSection));
 contactLink.addEventListener("click", scroll.bind(this, contactSection));
@@ -66,7 +66,7 @@ const loadImg = (entries, observer) => {
 
   // Remove blur on images
   entry.target.addEventListener("load", () =>
-    entry.target.classList.remove("lazy-img")
+    entry.target.classList.remove("lazy-img"),
   );
 
   observer.unobserve(entry.target);
