@@ -159,6 +159,48 @@ h2 {
   max-width: 80rem;
 }
 
+.button-container {
+  display: flex;
+  margin-top: 5rem;
+  gap: 4rem;
+}
+
+.cta-btn {
+  border: 1px solid var(--body-color);
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  padding: 2rem 0;
+  width: 21rem;
+  cursor: pointer;
+}
+
+.cta-btn,
+.cta-btn a {
+  color: var(--body-color);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  box-shadow: inset 0px 0px 0px 4px var(--body-color);
+  transition: all 200ms ease-in-out;
+}
+
+#resume-btn {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border: 1px solid var(--primary-color);
+}
+
+#resume-btn:hover,
+#resume-btn:active {
+  background-color: var(--bg-color);
+  color: var(--body-color);
+  border: 1px solid var(--body-color);
+  transition: all 200ms ease-in-out;
+}
+
 /* About Section */
 
 .section--about {
