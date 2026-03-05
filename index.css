@@ -17,14 +17,14 @@ html,
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--bg-color);
   color: var(--body-color);
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .section {
@@ -136,18 +136,23 @@ nav {
 }
 
 .headings {
-  margin-top: -2rem;
+  /* margin-top: -2rem; */
   gap: 2.1rem;
 }
 
 h1 {
-  font-size: 9.5rem;
+  font-size: 8rem;
   line-height: 100%;
   font-weight: 700;
   overflow-x: visible;
+  max-width: 80rem;
 }
 
 h2 {
+  font-size: 5rem;
+}
+
+#subtitle {
   font-size: 3.6rem;
   font-weight: 500;
   color: var(--light-gray);
