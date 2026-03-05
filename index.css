@@ -431,6 +431,7 @@ h4 {
   gap: 4rem;
   height: 600px;
   width: 500px;
+  border: 2px solid transparent;
 }
 
 .testimonial:hover {
