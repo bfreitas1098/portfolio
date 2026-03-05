@@ -377,13 +377,15 @@ h4 {
   gap: 1rem;
 }
 
-.project-stack-span {
+.project-stack-title {
   font-size: 1.6rem;
 }
 
-.project-icon-container {
+.project-stack-span {
+  font-size: 1.4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 12px;
+  color: var(--primary-color);
 }
 
 .stack-icon {
