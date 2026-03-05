@@ -482,21 +482,24 @@ blockquote {
 /* Contact Section */
 
 .section--contact {
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-form {
   background-color: var(--dark-gray);
   display: flex;
   justify-content: center;
+  width: 75%;
+  height: 600px;
 }
 
 .form-container {
-  padding: 6.4rem 8rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 6.4rem;
+  gap: 3rem;
 }
 
 .form-container p,
@@ -505,20 +508,20 @@ h5 {
 }
 
 .form-container p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 125%;
   margin-bottom: 5px;
 }
 
 h5 {
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   font-weight: 600;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 4.2rem;
+  gap: 3rem;
 }
 
 .input-container {
@@ -534,12 +537,12 @@ label {
 }
 
 input {
-  height: 6rem;
+  height: 4rem;
 }
 
 input,
 textarea {
-  width: 50rem;
+  width: 40rem;
 }
 
 input:not(.submit-btn) {
@@ -568,7 +571,7 @@ textarea {
 .submit-btn {
   background-color: var(--primary-color);
   color: var(--dark-gray);
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   font-weight: 500;
   border: none;
   font-family: "Inter", sans-serif;
@@ -581,8 +584,7 @@ textarea {
 }
 
 .contact-img {
-  min-width: 46rem;
-  max-width: 60rem;
+  width: 50%;
 }
 
 /* Footer */
