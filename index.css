@@ -166,7 +166,6 @@ nav {
 .arrow {
   align-self: flex-end;
   height: 10rem;
-  /* transform: translateX(-3rem); */
   animation: bounce 1.5s infinite;
 }
 
@@ -684,5 +683,97 @@ footer {
 
   .testimonials-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .section {
+    padding: var(--section-padding-tablet);
+  }
+
+  header {
+    padding: 0 4rem 10rem;
+  }
+
+  nav {
+    padding: 0 2rem;
+    height: 8rem;
+  }
+
+  .logo {
+    width: 12rem;
+    height: auto;
+    transform: none;
+  }
+
+  .navigation {
+    gap: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    margin-top: 8rem;
+  }
+
+  .intro-line {
+    font-size: 2rem;
+  }
+
+  .arrow {
+    height: 7rem;
+  }
+
+  .headings {
+    gap: 1.8rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  #subtitle {
+    font-size: 2.4rem;
+    width: 100%;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 2.8rem;
+  }
+
+  .testimonials-container,
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-img {
+    display: none;
+  }
+
+  footer {
+    margin-top: 14rem;
+    padding: 8rem 0;
   }
 }
