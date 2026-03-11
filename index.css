@@ -800,10 +800,10 @@ footer {
   .hidden {
     display: none;
   }
-
+  /* 
   .menu-btn {
     display: block;
-  }
+  } */
 
   .menu-btn,
   .close-btn {
@@ -819,7 +819,7 @@ footer {
     width: 100%;
     background-color: var(--dark-gray);
     list-style: none;
-    display: flex;
+    display: hidden;
     flex-direction: column;
     gap: 2rem;
     padding: 2.4rem;
