@@ -331,9 +331,9 @@ h4 {
   gap: 3.2rem;
 }
 
-.project a:first-child {
+/* .project a:first-child {
   display: block;
-}
+} */
 
 .project-img {
   width: 100%;
@@ -467,13 +467,6 @@ h4 {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
-
-/* .quote-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-} */
 
 blockquote {
   font-size: 1.8rem;
@@ -686,7 +679,7 @@ footer {
   }
 }
 
-/* Tablets */
+/* Tablet */
 @media (max-width: 900px) {
   .section {
     padding: var(--section-padding-tablet);
@@ -775,5 +768,150 @@ footer {
   footer {
     margin-top: 14rem;
     padding: 8rem 0;
+  }
+}
+
+/* Mobile */
+@media (min-width: 601px) {
+  .menu-btn,
+  .close-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .section {
+    padding: var(--section-padding-mobile);
+  }
+
+  header {
+    padding: 0 2.4rem 8rem;
+  }
+
+  nav {
+    padding: 0;
+    height: 7rem;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .menu-btn,
+  .close-btn {
+    display: block !important;
+    font-size: 3.2rem;
+    color: var(--body-color);
+    cursor: pointer;
+  }
+
+  .responsive-nav {
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    width: 100%;
+    background-color: var(--dark-gray);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.4rem;
+    z-index: 3000;
+  }
+
+  .hero {
+    margin-top: 5rem;
+  }
+
+  .intro {
+    flex-wrap: wrap;
+  }
+
+  .intro-line {
+    font-size: 1.8rem;
+  }
+
+  .arrow {
+    height: 5rem;
+  }
+
+  .headings {
+    gap: 1.6rem;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+    line-height: 1.05;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    line-height: 1.25;
+  }
+
+  #subtitle {
+    font-size: 2rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .cta-btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .bio {
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+  }
+
+  .feature-description,
+  .project-description,
+  blockquote,
+  .form-container p {
+    font-size: 1.7rem;
+  }
+
+  .project-title {
+    font-size: 2.4rem;
+  }
+
+  .project-links-container,
+  .website-link {
+    width: 100%;
+  }
+
+  .website-link span {
+    width: 100%;
+    text-align: center;
+  }
+
+  #testimonials-subheading {
+    font-size: 2rem;
+  }
+
+  .testimonial {
+    padding: 2rem;
+  }
+
+  .form-container {
+    padding: 2.4rem;
+  }
+
+  h5 {
+    font-size: 3.2rem;
+  }
+
+  footer {
+    margin-top: 10rem;
+    padding: 6rem 0;
   }
 }
