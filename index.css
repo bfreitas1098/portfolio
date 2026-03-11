@@ -49,10 +49,6 @@ img {
   padding: var(--section-padding-desktop);
 }
 
-.hidden {
-  display: none !important;
-}
-
 h1,
 h2,
 h3,
@@ -224,6 +220,7 @@ h2 {
   min-width: 21rem;
   cursor: pointer;
   transition: all 200ms ease-in-out;
+  text-align: center;
 }
 
 .cta-btn:hover,
@@ -773,8 +770,7 @@ footer {
 
 /* Mobile */
 @media (min-width: 601px) {
-  .menu-btn,
-  .close-btn {
+  .hidden {
     display: none !important;
   }
 }
@@ -798,6 +794,10 @@ footer {
   }
 
   .navigation {
+    display: none;
+  }
+
+  .hidden {
     display: none;
   }
 
@@ -869,6 +869,10 @@ footer {
   .cta-btn {
     width: 100%;
     min-width: 0;
+  }
+
+  .icon-container {
+    gap: 1.6rem;
   }
 
   .bio {

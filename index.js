@@ -27,14 +27,14 @@ const testimonialsSection = document.getElementById("testimonials-section");
 const projectsSection = document.getElementById("projects-section");
 const contactSection = document.getElementById("contact-section");
 
-if (header.getBoundingClientRect().width <= 1024) {
+if (header.getBoundingClientRect().width <= 600) {
   aboutLink = document.querySelector(".responsive-link--about");
   testimonialsLink = document.querySelector(".responsive-link--testimonials");
   projectsLink = document.querySelector(".responsive-link--projects");
   contactLink = document.querySelector(".responsive-link--contact");
 }
 
-if (header.getBoundingClientRect().width > 1024) {
+if (header.getBoundingClientRect().width > 600) {
   aboutLink = document.querySelector(".nav-link--about");
   testimonialsLink = document.querySelector(".nav-link--testimonials");
   projectsLink = document.querySelector(".nav-link--projects");
