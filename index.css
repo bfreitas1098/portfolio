@@ -265,34 +265,32 @@ h2 {
 
 .bio {
   font-size: 2rem;
-  line-height: 155%;
+  line-height: 1.55;
   margin-bottom: 9rem;
-  max-width: 750px;
+  max-width: 75rem;
 }
 
 .features-container {
   display: grid;
-  grid-template-columns: 44rem 44rem;
-  column-gap: 6rem;
-  row-gap: 9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6rem;
+  max-width: 100rem;
 }
 
 .feature {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
   gap: 2.8rem;
+  transition: transform 0.3s ease;
 }
 
 .feature:hover {
-  transform: translateY(-6px);
-  transition: 0.3s ease;
+  transform: translateY(-0.6rem);
 }
 
 .feature-heading {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 1.2rem;
 }
@@ -311,7 +309,7 @@ h4 {
 .feature-description {
   color: var(--body-color);
   font-size: 2rem;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 /* Projects Section */
