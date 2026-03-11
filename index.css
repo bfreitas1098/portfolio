@@ -793,7 +793,7 @@ footer {
   }
 
   nav {
-    padding: 0;
+    padding: 0 2rem 0 0;
     height: 7rem;
   }
 
@@ -801,9 +801,12 @@ footer {
     display: none;
   }
 
+  .menu-btn {
+    display: block;
+  }
+
   .menu-btn,
   .close-btn {
-    display: block !important;
     font-size: 3.2rem;
     color: var(--body-color);
     cursor: pointer;
