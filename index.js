@@ -1,6 +1,6 @@
 /* Footer year */
-const currentYear = new Date().getFullYear();
-document.querySelector(".year").innerHTML = currentYear;
+const yearEl = document.querySelector(".year");
+yearEl.textContent = new Date().getFullYear();
 
 /* FormSubmit API setup */
 
@@ -13,43 +13,49 @@ document.querySelector(".year").innerHTML = currentYear;
 // });
 
 /* Smooth scrolling */
-let aboutLink;
-let testimonialsLink;
-let projectsLink;
-let contactLink;
-const headerLink = document.querySelector(".logo");
+const logo = document.querySelector(".logo");
 const header = document.querySelector("header");
-const aboutSection = document.getElementById("about-section");
-const testimonialsSection = document.getElementById("testimonials-section");
-const projectsSection = document.getElementById("projects-section");
-const contactSection = document.getElementById("contact-section");
+const nav = document.querySelector("nav");
+const sections = {
+  about: document.getElementById("about-section"),
+  projects: document.getElementById("projects-section"),
+  testimonials: document.getElementById("testimonials-section"),
+  contact: document.getElementById("contact-section"),
+};
 
-if (header.getBoundingClientRect().width <= 600) {
-  aboutLink = document.querySelector(".responsive-link--about");
-  testimonialsLink = document.querySelector(".responsive-link--testimonials");
-  projectsLink = document.querySelector(".responsive-link--projects");
-  contactLink = document.querySelector(".responsive-link--contact");
-}
-
-if (header.getBoundingClientRect().width > 600) {
-  aboutLink = document.querySelector(".nav-link--about");
-  testimonialsLink = document.querySelector(".nav-link--testimonials");
-  projectsLink = document.querySelector(".nav-link--projects");
-  contactLink = document.querySelector(".nav-link--contact");
-}
-
-const scroll = function (section) {
+const scrollToSection = (section) => {
+  if (!section) return;
   section.scrollIntoView({ behavior: "smooth" });
 };
 
-aboutLink.addEventListener("click", scroll.bind(this, aboutSection));
-testimonialsLink.addEventListener(
-  "click",
-  scroll.bind(this, testimonialsSection),
-);
-projectsLink.addEventListener("click", scroll.bind(this, projectsSection));
-contactLink.addEventListener("click", scroll.bind(this, contactSection));
-headerLink.addEventListener("click", scroll.bind(this, header));
+/* Previous smooth scrolling logic */
+
+// if (header.getBoundingClientRect().width <= 600) {
+//   aboutLink = document.querySelector(".responsive-link--about");
+//   testimonialsLink = document.querySelector(".responsive-link--testimonials");
+//   projectsLink = document.querySelector(".responsive-link--projects");
+//   contactLink = document.querySelector(".responsive-link--contact");
+// }
+
+// if (header.getBoundingClientRect().width > 600) {
+//   aboutLink = document.querySelector(".nav-link--about");
+//   testimonialsLink = document.querySelector(".nav-link--testimonials");
+//   projectsLink = document.querySelector(".nav-link--projects");
+//   contactLink = document.querySelector(".nav-link--contact");
+// }
+
+// const scroll = function (section) {
+//   section.scrollIntoView({ behavior: "smooth" });
+// };
+
+// aboutLink.addEventListener("click", scroll.bind(this, aboutSection));
+// testimonialsLink.addEventListener(
+//   "click",
+//   scroll.bind(this, testimonialsSection),
+// );
+// projectsLink.addEventListener("click", scroll.bind(this, projectsSection));
+// contactLink.addEventListener("click", scroll.bind(this, contactSection));
+// headerLink.addEventListener("click", scroll.bind(this, header));
 
 /* Lazy loading images */
 const imgTargets = document.querySelectorAll("img[data-src]");
@@ -81,7 +87,6 @@ imgTargets.forEach((img) => imgObserver.observe(img));
 const responsiveNav = document.querySelector(".responsive-nav");
 const menuBtn = document.querySelector(".menu-btn");
 const closeBtn = document.querySelector(".close-btn");
-const nav = document.querySelector("nav");
 
 const openMenu = () => {
   responsiveNav.classList.remove("hidden");
