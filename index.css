@@ -653,3 +653,36 @@ footer {
 }
 
 /* Media Queries */
+
+/* large laptops & smaller desktops */
+@media (max-width: 1200px) {
+  .section {
+    padding: var(--section-padding-tablet);
+  }
+
+  header {
+    padding: 0 6rem 12rem;
+  }
+
+  nav {
+    padding: 0 3rem;
+  }
+
+  h1 {
+    font-size: 7.6rem;
+    max-width: 70rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  #subtitle {
+    font-size: 3rem;
+    max-width: 70rem;
+  }
+
+  .testimonials-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
