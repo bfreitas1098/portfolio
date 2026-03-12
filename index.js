@@ -28,6 +28,44 @@ const scrollToSection = (section) => {
   section.scrollIntoView({ behavior: "smooth" });
 };
 
+/* Desktop nav links */
+const desktopAbout = document.querySelector(".nav-link--about");
+const desktopProjects = document.querySelector(".nav-link--projects");
+const desktopTestimonials = document.querySelector(".nav-link--testimonials");
+const desktopContact = document.querySelector(".nav-link--contact");
+
+/* Mobile nav links */
+const mobileAbout = document.querySelector(".responsive-link--about");
+const mobileProjects = document.querySelector(".responsive-link--projects");
+const mobileTestimonials = document.querySelector(
+  ".responsive-link--testimonials",
+);
+const mobileContact = document.querySelector(".responsive-link--contact");
+
+desktopAbout?.addEventListener("click", () => scrollToSection(sections.about));
+desktopProjects?.addEventListener("click", () =>
+  scrollToSection(sections.projects),
+);
+desktopTestimonials?.addEventListener("click", () =>
+  scrollToSection(sections.testimonials),
+);
+desktopContact?.addEventListener("click", () =>
+  scrollToSection(sections.contact),
+);
+
+mobileAbout?.addEventListener("click", () => scrollToSection(sections.about));
+mobileProjects?.addEventListener("click", () =>
+  scrollToSection(sections.projects),
+);
+mobileTestimonials?.addEventListener("click", () =>
+  scrollToSection(sections.testimonials),
+);
+mobileContact?.addEventListener("click", () =>
+  scrollToSection(sections.contact),
+);
+
+logo?.addEventListener("click", () => scrollToSection(header));
+
 /* Previous smooth scrolling logic */
 
 // if (header.getBoundingClientRect().width <= 600) {
@@ -89,30 +127,30 @@ const menuBtn = document.querySelector(".menu-btn");
 const closeBtn = document.querySelector(".close-btn");
 
 const openMenu = () => {
-  responsiveNav.classList.remove("hidden");
-  menuBtn.classList.add("hidden");
-  closeBtn.classList.remove("hidden");
+  responsiveNav?.classList.remove("hidden");
+  menuBtn?.classList.add("hidden");
+  closeBtn?.classList.remove("hidden");
 };
 
 const closeMenu = () => {
-  responsiveNav.classList.add("hidden");
-  closeBtn.classList.add("hidden");
-  menuBtn.classList.remove("hidden");
+  responsiveNav?.classList.add("hidden");
+  closeBtn?.classList.add("hidden");
+  menuBtn?.classList.remove("hidden");
 };
 
-menuBtn.addEventListener("click", openMenu);
-closeBtn.addEventListener("click", closeMenu);
+menuBtn?.addEventListener("click", openMenu);
+closeBtn?.addEventListener("click", closeMenu);
 
-const responsiveLinks = [
-  aboutLink,
-  testimonialsLink,
-  projectsLink,
-  contactLink,
-];
+const mobileLinks = [
+  mobileAbout,
+  mobileProjects,
+  mobileTestimonials,
+  mobileContact,
+].filter(Boolean);
 
-for (let i = 0; i < responsiveLinks.length; i++) {
-  responsiveLinks[i].addEventListener("click", closeMenu);
-}
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", closeMenu);
+});
 
 /* Sticky nav */
 const navHeight = nav.getBoundingClientRect().height;
