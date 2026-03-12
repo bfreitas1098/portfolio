@@ -153,19 +153,21 @@ mobileLinks.forEach((link) => {
 });
 
 /* Sticky nav */
-const navHeight = nav.getBoundingClientRect().height;
+const navHeight = nav?.getBoundingClientRect().height ?? 0;
 
 document.addEventListener("DOMContentLoaded", () => {
+  if (!header || !nav) return;
+
   const stickyNav = (entries) => {
     const [entry] = entries;
 
     if (!entry.isIntersecting) {
       nav.classList.add("sticky");
-      responsiveNav.classList.add("bg");
+      responsiveNav?.classList.add("bg");
     }
     if (entry.isIntersecting) {
       nav.classList.remove("sticky");
-      responsiveNav.classList.remove("bg");
+      responsiveNav?.classList.remove("bg");
     }
   };
 
