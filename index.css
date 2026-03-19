@@ -773,9 +773,13 @@ footer {
 }
 
 /* Mobile */
-@media (min-width: 601px) {
+@media (min-width: 610px) {
   .hidden {
     display: none !important;
+  }
+
+  .menu-btn {
+    visibility: hidden;
   }
 }
 
@@ -800,11 +804,6 @@ footer {
   .navigation {
     display: none;
   }
-
-  /* 
-  .menu-btn {
-    display: block;
-  } */
 
   .menu-btn,
   .close-btn {
