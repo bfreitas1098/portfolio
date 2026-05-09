@@ -59,4 +59,4 @@ LinkedIn: https://www.linkedin.com/in/barbara-freitas-dev/
 Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/bfreitas1098/portfolio
